@@ -1,0 +1,88 @@
+*{
+	font-family: 'Lato', sans-serif;
+	margin:0;
+	padding:0;
+}
+
+html,body{
+	height:100%;
+}
+
+body{
+	background: #eee;
+}
+
+header{
+	height:100vh;
+	position: relative;
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1464397084257-576d657be142?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=48624f84195c176012455e1e826638ba&auto=format&fit=crop&w=1050&q=80");
+	background-position:center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+h1{
+	font-size:64px;
+}
+
+h3{
+	font-size:36px;
+	margin-top:14px;
+}
+
+h1,h3{
+	font-weight:300;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.67);
+}
+
+.absolute-headers{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-transform:uppercase;
+	text-align:center;
+	color:white;
+	letter-spacing:1px;
+}
+
+.images-div{
+	font-size: 0;
+}
+
+h4{
+	font-size:42px;
+	font-weight:300;
+	color:black;
+	text-align:center;
+	margin-top:70px;
+}
+
+h4::after{
+	content:"";
+	background-color:#3391FF;
+	display:block;
+	width:10%;
+	height:2px;
+	margin:20px auto;
+}
+
+img{
+	width:30%;
+	margin:1.66%;
+	display:inline-block;
+	height:450px;
+	filter:grayscale(100%);
+	transition: all 0.6s ease-in-out;
+}
+
+img:hover{
+	filter: grayscale(0%);
+	transform:translateY(-20px);
+}
+ /* 
+ -----Notes about inline-block vs float ---- 
+
+inline block elements render any white space between inline block elements
+whereas with float left the images will float over any whitespace */ 
